@@ -1,0 +1,35 @@
+.navbar{
+    margin-top: -325px;
+    margin-left: -110px;
+    height: 55px;
+    
+    width: 1470px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+   
+    width: 100px;
+    height: 20px;
+}
+.webName{
+    margin-left: -280px;
+}
+.BookInp{
+    height: 40px;
+    width: 500px;
+    text-align: left;
+    color: white;
+    padding-left: 15px;
+    border-radius: 20px;
+    
+}
+.doRegister{
+    background-color: #c2bebe;
+    width: 130px;
+    height: 46px;
+    color: black;
+    border-radius: 20px;
+
+}
