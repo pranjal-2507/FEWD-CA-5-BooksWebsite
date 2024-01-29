@@ -13,8 +13,26 @@
     width: 100px;
     height: 20px;
 }
+.title{
+    margin-left: 140px;
+    position: relative;
+    
+}
 .webName{
     margin-left: -280px;
+}
+.contain{
+    margin-top: 20px;
+    position: absolute;
+   display: grid;
+   grid-template-columns: auto auto auto auto;
+}
+.page{
+    width: 340px;
+    height: 470px;
+    padding-top: 20px;
+    
+   
 }
 .BookInp{
     height: 40px;
