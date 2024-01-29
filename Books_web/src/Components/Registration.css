@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .head{
+    top: 6px;
+    left: 577px;
+    position: absolute;
+  }
+  form {
+    padding: 40px;
+    border: 2px solid grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    background-color: grey;
+    border-radius: 20px;
+  }
+  
+  label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"] {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+    width: 300px;
+  }
+  
+  input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 17px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .register {
+    margin-top: 20px;
+    color: green;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .error-message {
+   
+    color: rgb(205, 7, 7);
+    font-size: 15px;
+    margin-top: 5px;
+  }
+  
