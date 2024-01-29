@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Registration.css";
 
 function Forms() {
+  // State to manage validation error messages
   const [alert, setAlert] = useState({
     firstName: "",
     Email: "",
@@ -9,6 +10,7 @@ function Forms() {
     RepeatPassword: ""
   });
 
+  // State to store form data
   const [formData, setFormData] = useState({
     firstName: "",
     Email: "",
@@ -16,8 +18,10 @@ function Forms() {
     RepeatPassword: ""
   });
 
+  // State to track successful registration
   const [registrationSuccess, setRegistrationSuccess] = useState(false);
 
+  // Function to handle form input changes
   function handleChange(e) {
     const { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
@@ -26,17 +30,17 @@ function Forms() {
     setAlert((prevAlert) => ({ ...prevAlert, [name]: "" }));
   }
 
+  // Function to validate email using regex
   function validateEmail(email) {
-    // Simple email validation using regex
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
   }
 
-  // ... (previous code)
-
-function handleSubmit(e) {
+  // Function to handle form submission
+  function handleSubmit(e) {
     e.preventDefault();
   
+    // Object to store validation error messages
     let messageBox = {
       firstName: "",
       Email: "",
@@ -69,8 +73,10 @@ function handleSubmit(e) {
       messageBox.RepeatPassword = "Passwords do not match";
     }
   
+    // Set the validation error messages
     setAlert(messageBox);
   
+    // If there are no validation errors, set registration success state to true
     if (
       messageBox.firstName === "" &&
       messageBox.Email === "" &&
@@ -84,13 +90,12 @@ function handleSubmit(e) {
     }
   }
   
-
-  
   return (
     <>
       <div className="Forms">
         <h1 className="head">Create Account</h1>
         <form onSubmit={handleSubmit}>
+          {/* Input for First Name */}
           <label htmlFor="firstName">
             <input
               required
@@ -104,6 +109,7 @@ function handleSubmit(e) {
             <div className="error-message">{alert.firstName}</div>
           </label>
 
+          {/* Input for Email */}
           <label htmlFor="Email">
             <input
               required
@@ -117,6 +123,7 @@ function handleSubmit(e) {
             <div className="error-message">{alert.Email}</div>
           </label>
 
+          {/* Input for Password */}
           <label htmlFor="Password">
             <input
               required
@@ -130,6 +137,7 @@ function handleSubmit(e) {
             <div className="error-message">{alert.Password}</div>
           </label>
 
+          {/* Input for Repeating Password */}
           <label htmlFor="RepeatPassword">
             <input
               required
@@ -143,11 +151,13 @@ function handleSubmit(e) {
             <div className="error-message">{alert.RepeatPassword}</div>
           </label>
 
+          {/* Submit button */}
           <label>
             <input type="submit" className="submit" value="Sign Up" />
           </label>
         </form>
 
+        {/* Display registration success message */}
         <div className="register">
           {registrationSuccess && <div>Registration Successful!</div>}
         </div>

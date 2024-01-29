@@ -1,8 +1,8 @@
-import React from 'react';
-import Books from './Components/Books';
-import Registration from './Components/Registration';
-import { BrowserRouter } from 'react-router-dom';
-import { Route, Routes } from 'react-router-dom';
+import React from "react";
+import Books from "./Components/Books";
+import Registration from "./Components/Registration";
+import { BrowserRouter } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (

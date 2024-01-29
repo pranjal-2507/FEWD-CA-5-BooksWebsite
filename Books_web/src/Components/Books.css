@@ -1,54 +1,46 @@
-
-.navbar{
-   
-    margin-top: -325px;
-    margin-left: -110px;
-    height: 55px;
-    width: 1470px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.navbar {
+  margin-top: -325px;
+  margin-left: -110px;
+  height: 55px;
+  width: 1470px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.logo{
-   
-    width: 100px;
-    height: 20px;
+.logo {
+  width: 100px;
+  height: 20px;
 }
-.title{
-    margin-left: 140px;
-    position: relative;
-    
+.title {
+  margin-left: 140px;
+  position: relative;
 }
-.webName{
-    margin-left: -280px;
+.webName {
+  margin-left: -280px;
 }
-.contain{
-    margin-top: 20px;
-    position: absolute;
-   display: grid;
-   grid-template-columns: auto auto auto auto;
+.contain {
+  margin-top: 20px;
+  position: absolute;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
 }
-.page{
-    width: 340px;
-    height: 470px;
-    padding-top: 20px;
-    
-   
+.page {
+  width: 340px;
+  height: 470px;
+  padding-top: 20px;
 }
-.BookInp{
-    height: 20px;
-    width: 500px;
-    text-align: left;
-    color: white;
-    padding-left: 15px;
-    border-radius: 20px;
-    
+.BookInp {
+  height: 20px;
+  width: 500px;
+  text-align: left;
+  color: white;
+  padding-left: 15px;
+  border-radius: 20px;
 }
-.doRegister{
-    background-color: #c2bebe;
-    width: 130px;
-    height: 46px;
-    color: black;
-    border-radius: 20px;
-
+.doRegister {
+  background-color: #c2bebe;
+  width: 130px;
+  height: 46px;
+  color: black;
+  border-radius: 20px;
 }
