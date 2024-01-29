@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Books.css';
+import '../App.css';
 import logo from '../Components/logo.webp';
 import axios from 'axios';
 import {Link} from 'react-router-dom'
@@ -43,7 +44,7 @@ function Books() {
   }, []);
 
   return (
-   
+    <>
       <div className="container">
         <div className="navbar">
           <img className="logo" src={logo} alt="" />
@@ -57,11 +58,8 @@ function Books() {
             className="BookInp"
           />
 
-<Link to="/registrationform">
-  <button className="doRegister">REGISTER</button>
-</Link>
-
-
+          <Link to={"./registrationform"}><button className="doRegister">REGISTER</button></Link>
+        </div>
 
         <h2 className="title">Explore Books!📚❤️</h2>
         <div className="contain">
@@ -81,7 +79,7 @@ function Books() {
           ))}
         </div>
       </div>
-  </div>
+    </>
   );
 }
 

@@ -25,9 +25,8 @@ body {
     margin-bottom: 20px;
   }
   
-  input[type="text"],
-  input[type="tel"],
-  input[type="email"] {
+  input {
+    height: 20px;
     border: 2px solid #ccc;
     border-radius: 5px;
     padding: 10px;
@@ -36,6 +35,8 @@ body {
   }
   
   input[type="submit"] {
+    height: 38px;
+    width: 200px;
     background-color: #4caf50;
     color: white;
     border: none;
@@ -54,7 +55,7 @@ body {
   }
   
   .error-message {
-   
+   width: 330px;
     color: rgb(205, 7, 7);
     font-size: 15px;
     margin-top: 5px;
