@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import "./Registration.css";
 
+
 function Forms() {
+
   // State to manage validation error messages
   const [alert, setAlert] = useState({
     firstName: "",
@@ -54,10 +56,10 @@ function Forms() {
     }
   
     // Constraint: Name cannot contain numbers or special characters
-    if (formData.firstName.length > 0 && /[^a-zA-Z]/.test(formData.firstName)) {
-      messageBox.firstName = "Name cannot be a Number";
+    if (formData.firstName.length > 0 && /[^a-zA-Z\s]/.test(formData.firstName)) {
+      messageBox.firstName = "Name cannot be a Number or contain special characters";
     }
-  
+    
     // Constraint: Email must be a valid email
     if (formData.Email.length > 0 && !validateEmail(formData.Email)) {
       messageBox.Email = "Please enter a valid email address";
@@ -84,12 +86,14 @@ function Forms() {
       messageBox.RepeatPassword === ""
     ) {
       setRegistrationSuccess(true);
+      console.log("Registration Data:",formData)
     } else {
       // If there are validation errors, reset registration success state
       setRegistrationSuccess(false);
     }
   }
   
+
   return (
     <>
       <div className="Forms">
