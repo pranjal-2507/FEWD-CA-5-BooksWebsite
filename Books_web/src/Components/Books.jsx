@@ -43,7 +43,7 @@ function Books() {
         );
         setBookData(response.data.books);
         setFilteredBooks(response.data.books); // Initially display all books
-        console.log(response.data.books);
+       
       } catch (error) {
         console.log("Error fetching Data:", error);
       }
