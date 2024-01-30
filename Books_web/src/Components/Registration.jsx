@@ -57,9 +57,9 @@ function Forms() {
   
     // Constraint: Name cannot contain numbers or special characters
     if (formData.firstName.length > 0 && /[^a-zA-Z\s]/.test(formData.firstName)) {
-      messageBox.firstName = "Name cannot be a Number or contain special characters";
-    }
-    
+  messageBox.firstName = "Name cannot be a Number or contain special characters";
+}
+
     // Constraint: Email must be a valid email
     if (formData.Email.length > 0 && !validateEmail(formData.Email)) {
       messageBox.Email = "Please enter a valid email address";
